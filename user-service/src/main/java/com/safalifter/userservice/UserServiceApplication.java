@@ -23,7 +23,7 @@ public class UserServiceApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
-        final String pass = "$2a$10$2529eBq3R6Y41t03Mku2I.2Nh3W0p25lt.s.85mG0kiAvxI4bsAHa";
+        final String pass = "$2a$10$Ob0tkKZPMPQXwk52Q7bOiOAxaenp7XGcuUcpni4cd5O8YmHXhM8Ge"; // 12345basel
         var admin = User.builder()
                 .username("admin")
                 .email("admin@gmail.com")

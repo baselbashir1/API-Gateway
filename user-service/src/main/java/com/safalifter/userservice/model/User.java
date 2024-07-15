@@ -13,14 +13,15 @@ import javax.persistence.*;
 @Getter
 @Setter
 public class User extends BaseEntity {
+
     @Column(unique = true, nullable = false)
     private String username;
 
-    @Column(nullable = false)
-    private String password;
-
     @Column(unique = true, nullable = false, updatable = false)
     private String email;
+
+    @Column(nullable = false)
+    private String password;
 
     @Enumerated(EnumType.STRING)
     private Role role;
@@ -29,5 +30,6 @@ public class User extends BaseEntity {
     private Active active;
 
     @Embedded
-    private UserDetails userDetails;
+    private UserInformation userInformation;
+
 }

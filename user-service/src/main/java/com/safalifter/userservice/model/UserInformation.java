@@ -12,7 +12,7 @@ import javax.persistence.Embeddable;
 @Getter
 @Setter
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class UserDetails {
+public class UserInformation {
     private String firstName;
     private String lastName;
     private String phoneNumber;

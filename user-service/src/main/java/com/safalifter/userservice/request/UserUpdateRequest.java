@@ -1,6 +1,6 @@
 package com.safalifter.userservice.request;
 
-import com.safalifter.userservice.model.UserDetails;
+import com.safalifter.userservice.model.UserInformation;
 import lombok.Data;
 
 import javax.validation.constraints.NotBlank;
@@ -11,5 +11,5 @@ public class UserUpdateRequest {
     private String id;
     private String username;
     private String password;
-    private UserDetails userDetails;
+    private UserInformation userInformation;
 }
