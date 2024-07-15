@@ -24,6 +24,9 @@ public class GatewayConfig {
                 .route("auth-service", r -> r.path("/auth/**")
                         .uri("http://localhost:8082"))
 
+                .route("clinic-service", r -> r.path("/clinic/**")
+                        .uri("http://localhost:8083"))
+
                 .build();
     }
 }
