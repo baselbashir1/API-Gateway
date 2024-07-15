@@ -1,6 +1,6 @@
 package com.safalifter.authservice.service;
 
-import com.safalifter.authservice.dto.UserDto;
+import com.safalifter.authservice.dto.responses.UserDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -11,8 +11,8 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 @RequiredArgsConstructor
-
 public class CustomUserDetails implements UserDetails {
+
     private final UserDto user;
 
     @Override
